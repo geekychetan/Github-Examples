@@ -24,3 +24,11 @@ jobs:
         run: echo "Job 3 task 1"
       - name: "J3-T2"
         run: echo "Job 3 task 2"
+  job4:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: "J4-T1"
+        run: echo "Job 4 task 1"
+      - name: "J4-T2"
+        run: echo "Job 4 task 2"
