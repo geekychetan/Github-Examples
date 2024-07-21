@@ -1,7 +1,8 @@
 name: Github context
 on: push
 jobs:
-    learb-gh-context:
+    learn-gh-context:
+        runs-on: ubuntu-latest
         steps:
             - name: "Step 1"
                 run: |
