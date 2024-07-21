@@ -2,7 +2,7 @@ name: Configuration Variables
 on: push
 jobs:
   job1:
-    runs-on: ubuntu-release
+    runs-on: ubuntu-latest
     steps:
     - name: Step 1
       run: | 
