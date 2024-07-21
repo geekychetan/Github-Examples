@@ -6,13 +6,22 @@ jobs:
   job-1:
     runs-on: ubuntu-latest
     steps:
-        - name: "group logging"
+        - name: "group logging - step 1"
           run: |
-            echo "::group::My group message"
+            echo "::group::My group message 1"
             echo "Msg 1"
             echo "Msg 2"
             echo "::endgroup::"
+        - name: "group logging - step 2"
+          run: |
             echo "::group::My group message 2"
             echo "Msg 3"
             echo "Msg 4"
             echo "::endgroup::"
+        - name: "group logging - step 3"
+          run: |
+            echo "::group::My group message 3"
+            echo "Msg 5"
+            echo "Msg 6"
+            echo "::endgroup::"
+  
