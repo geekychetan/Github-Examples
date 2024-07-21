@@ -11,6 +11,6 @@ jobs:
         date
         pwd
         ls -ltrh
-        ls -ltrh script/
+        ls -ltrh scripts/
     - name: Step 2 - Execute the script
       run: . scripts/my-script.sh 
