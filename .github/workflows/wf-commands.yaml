@@ -17,6 +17,4 @@ jobs:
             echo "CURRENT_PROFILE=offline" >> $GITHUB_ENV
         - name: "Accessing Github Environment variables"
           run: |
-            echo $MY_VAL
-            echo "${{ env.MY_VAL}}"
-  
+            echo $CURRENT_PROFILE  
