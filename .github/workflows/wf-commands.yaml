@@ -12,16 +12,10 @@ jobs:
             echo "Msg 1"
             echo "Msg 2"
             echo "::endgroup::"
-        - name: "group logging - step 2"
+        - name: "Setting Github Environment Variables"
           run: |
-            echo "::group::My group message 2"
-            echo "Msg 3"
-            echo "Msg 4"
-            echo "::endgroup::"
-        - name: "group logging - step 3"
+            echo "CURRENT_PROFILE=offline" >> $GITHUB_ENV
+        - name: "Accessing Github Environment variables"
           run: |
-            echo "::group::My group message 3"
-            echo "Msg 5"
-            echo "Msg 6"
-            echo "::endgroup::"
+            echo $MY_VAL
   
