@@ -1,0 +1,10 @@
+name: Run scripts Workflow
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Step 1 - Checkout the repository
+      uses: actions/checkout@v4
+    - name: Step 2 - Execute the script
+      run: . scripts/my-script.sh
