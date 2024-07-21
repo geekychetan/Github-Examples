@@ -1,0 +1,24 @@
+name: Dependent job example
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "J1-T1"
+        run: echo "Job 1 Task 1"
+      - name: "J1-T2"
+        run: echo "Job 1 task 2"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "J2-T1"
+        run: echo "Job 2 task 1"
+      - name: "J2-T2"
+        run: echo "Job 2 task 2"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "J3-T1"
+        run: echo "Job 3 task 1"
+      - name: "J3-T2"
+        run: echo "Job 3 task 2"
