@@ -18,4 +18,5 @@ jobs:
         - name: "Accessing Github Environment variables"
           run: |
             echo $MY_VAL
+            echo "${{ env.MY_VAL}}"
   
