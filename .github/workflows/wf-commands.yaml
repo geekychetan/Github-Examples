@@ -1,0 +1,14 @@
+name: Learn Workflow Commnds
+
+on: push
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+        - name: "group logging"
+          run: |
+            echo "::group::My group message"
+            echo "Msg 1"
+            echo "Msg 2"
+            ehco "::endgroup::"

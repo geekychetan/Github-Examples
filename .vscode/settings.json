@@ -1,4 +1,3 @@
 {
-    "git.enableCommitSigning": true,
-    "git.gpgSign": true
+    "git.enableCommitSigning": true
 }
