@@ -6,5 +6,11 @@ jobs:
     steps:
     - name: Step 1 - Checkout the repository
       uses: actions/checkout@v4
+    - name: Step 2 - List current directory
+      run: |
+        date
+        pwd
+        ls -ltrh
+        ls -ltrh script/
     - name: Step 2 - Execute the script
-      run: . scripts/my-script.sh
+      run: . scripts/my-script.sh 
