@@ -32,3 +32,11 @@ jobs:
         run: echo "Job 4 task 1"
       - name: "J4-T2"
         run: echo "Job 4 task 2"
+  job5:
+    needs: job2
+    runs-on: ubuntu-latest
+    steps:
+      - name: "J5-T1"
+        run: echo "Job 5 task 1"
+      - name: "J5-T2"
+        run: echo "Job 5 task 2"
